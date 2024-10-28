@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+<<<<<<< HEAD
     background-color: pink;
     margin: 0;
     padding: 0;
@@ -211,3 +212,13 @@ figcaption:hover {
     border-radius: 4px; /* Rounded corners for the hover effect */
 }
 
+=======
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+>>>>>>> 462aa68a7bc4fa722c5ec1424d5b06a7580bfc54
