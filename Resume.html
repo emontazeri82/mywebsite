@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Ghazal Montazeri - Resume</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none; /* Hide all pages by default */
+        }
+        .container.active {
+            display: block; /* Show only the active page */
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+        }
+        h2 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .job-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .job-date-location {
+            font-style: italic;
+            font-size: 14px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pagination button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .highlight-line {
+            transition: background-color 0.3s ease;
+        }
+        .highlight-line:hover {
+            background-color: yellow;
+            color: #333;
+        }
+        .page-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 0 5px;
+        }
+        .page-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .page-button:active {
+            background-color: #004080;
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div class="container active" id="page1">
+        <h1>Ghazal Montazeri</h1>
+        <p class="job-title">Senior Software Engineer</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:ghazal.montazeri@gmail.com">ghazal.montazeri@gmail.com</a></p>
+            <p>Phone: (210) 286-1723</p>
+            <p>Location: Austin, TX</p>
+            <p>GitHub: <a href="https://github.com/gezalsatx" target="_blank">github.com/gezalsatx</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ghazal-montazeri-b872352b/" target="_blank">www.linkedin.com/in/ghazal-montazeri</a></p>
+        </div>
+
+        <h2 class="section-title">Summary</h2>
+        <p>
+            Experienced Technical Product Manager with a strong background in machine learning, optimization algorithms, and data science. 
+            Proven track record of launching and advancing products from inception through advanced development stages. 
+            Contributed to the development of optimization and predictive modeling algorithms at Revionics (Aptos) and managed 
+            end-to-end development of AI chatbots using LLM models. Adept at managing the full lifecycle of machine learning products, 
+            from POC to production deployment, bridging the gap between development and business stakeholders.
+        </p>
+
+        <h2 class="section-title">Skills</h2>
+        <ul>
+            <li><strong>Languages & Tools:</strong> C#, Java, Python, JavaScript, GCP, Kubernetes, Scikit-learn, Pandas, NumPy, TypeScript, HTML, CSS, Spring, React, Next.js</li>
+            <li><strong>Database:</strong> SQL, MongoDB, BigQuery, PostgreSQL</li>
+            <li><strong>Methodologies:</strong> Agile, Scrum, DevOps, TDD, BDD</li>
+            <li><strong>Data Science:</strong> Machine Learning, AI, Data Pipelines, Big Data, Predictive Modeling</li>
+            <li><strong>Productivity Tools:</strong> Trello, Figma, Miro, Jira, Confluence, Loom, Mural</li>
+        </ul>
+
+        <h2 class="section-title">Education</h2>
+        <ul>
+            <li><strong>M.S., Applied Industrial Mathematics</strong> - University of Texas at San Antonio (2010-2012)</li>
+            <li><strong>B.S., Mathematics</strong> - University of Texas at San Antonio (2005-2010)</li>
+        </ul>
+
+        <h2 class="section-title">Experience</h2>
+        <h3 class="job-title">Founding Engineer, Lead Data Engineer - MindDAO</h3>
+        <p class="job-date-location">2024 - Present, Remote</p>
+        <ul>
+            <li>Developed innovative research platform investigating the effects of emerging technologies on human well-being.</li>
+            <li>Designed and implemented data models using Prisma ORM and PostgreSQL for processing complex datasets.</li>
+            <li>Integrated external data sources, leveraging Next.js and React.js for seamless data handling.</li>
+            <li>Developed a consumer-facing application using React.js and Tailwind CSS for data collection and user interaction.</li>
+            <li>Built a scalable platform using Next.js, React.js, Prisma ORM, PostgreSQL, Tailwind CSS, and Vercel.</li>
+            <li>Implemented continuous deployment with Vercel for rapid iteration and seamless updates.</li>
+            <li><strong>Key Skills:</strong> Next.js, React.js, TypeScript, HTML, CSS, PostgreSQL</li>
+        </ul>
+
+        <h3 class="job-title">Senior Software Engineer - Aptos (Revionics)</h3>
+        <p class="job-date-location">2021 - 2024, Austin, TX</p>
+        <ul>
+            <li>Led the transition and AI strategy integration for pricing and markdown teams during the Aptos acquisition, enhancing decision-making and customer satisfaction.</li>
+            <li>Functioned as Software Engineer and Part-Time Product Manager, developing and implementing scalable AI pricing solutions.</li>
+            <li>Oversaw the development of customer support AI chatbots utilizing LLM models from POC to full production.</li>
+            <li><strong>Key Skills:</strong> Python, C#, SQL Server, MongoDB, BigQuery, GCP</li>
+        </ul>
+    </div>
+    <div class="container" id="page2">
+        <h2 class="section-title">Experience (Continued)</h2>
+
+        <h3 class="job-title">Machine Learning Engineer - Revionics</h3>
+        <p class="job-date-location">2019 - 2021, Austin, TX</p>
+        <ul>
+            <li>Designed and optimized machine learning algorithms for price forecasting and optimization.</li>
+            <li>Managed multi-terabyte data sets using Google Cloud Platform (GCP) and BigQuery to ensure scalability and reliability.</li>
+            <li>Deployed predictive models for dynamic pricing.</li>
+            <li>Conducted research and development projects to explore advanced machine learning techniques, contributing to innovative retail pricing solutions.</li>
+            <li>Translated complex data science metrics into actionable business strategies, enhancing product offerings and efficiency.</li>
+            <li><strong>Key Skills:</strong> Python, C#, MATLAB, SQL Server, MongoDB, GCP, BigQuery</li>
+        </ul>
+
+        <h3 class="job-title">Software Engineer Development Lead - Revionics</h3>
+        <p class="job-date-location">2014 - 2019, Austin, TX</p>
+        <ul>
+            <li>Led a team of software engineers in developing pricing optimization software, significantly improving system performance and customer satisfaction.</li>
+            <li>Innovated and refined machine learning algorithms for price prediction, enabling efficient analysis of multi-million-row datasets.</li>
+            <li>Led the zero-to-one development of several products, including a budget optimization tool, working closely with product owners, designers, and stakeholders to transform ideas into fully functional products.</li>
+            <li><strong>Key Skills:</strong> C#, SQL, MongoDB, MATLAB, JavaScript</li>
+        </ul>
+
+        <h3 class="job-title">Software Engineer - H-E-B</h3>
+        <p class="job-date-location">2014 - 2019, Austin, TX</p>
+        <ul>
+            <li>Developed a proof-of-concept that transitioned into a production-ready application, reimagining key features for improved performance and accuracy.</li>
+            <li>Migrated complex mathematical logic from SQL to a Java-based module, reducing inefficiencies and increasing system robustness.</li>
+            <li>Built and optimized user-driven queries using jQuery and the Spring framework to handle hundreds of thousands of results with minimal latency.</li>
+            <li><strong>Key Skills:</strong> Java, SQL Server, jQuery, JavaScript, Node.js, HTML, CSS, Bootstrap</li>
+        </ul>
+
+        <h2 class="section-title">Volunteering</h2>
+        <ul>
+            <li><strong>Founder and Administrator</strong> - S.S.A.A. (A global support group organization)</li>
+            <li><strong>Volunteer</strong> - S.A.F.E. Alliance, Austin, TX (Local Shelter)</li>
+        </ul>
+    </div>
+    <div class="pagination">
+        <button onclick="showPage(1)" class="page-button">
+            <i class="fas fa-arrow-left"></i> Previous
+        </button>
+        <button onclick="showPage(2)" class="page-button">
+            Next <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
